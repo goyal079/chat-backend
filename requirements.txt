@@ -7,3 +7,4 @@ langchain-community>=0.0.10
 tiktoken>=0.5.1
 pinecone>=3.0.0
 langchain-pinecone
+pypdf

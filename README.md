@@ -73,20 +73,6 @@ PINECONE_ENVIRONMENT=your_pinecone_environment
 PINECONE_INDEX_NAME=your_index_name
 ```
 
-### Core Components
-
-#### OpenAI Integration
-
-```python
-from openai import OpenAI
-from langchain.chat_models import ChatOpenAI
-
-# Initialize OpenAI client
-client = OpenAI(api_key=OPENAI_API_KEY)
-
-# Initialize LangChain's ChatOpenAI
-llm = ChatOpenAI(temperature=0.7, model="gpt-3.5-turbo")
-```
 
 ### Installation
 
@@ -107,7 +93,7 @@ pip install -r requirements.txt
 Start the server:
 
 ```bash
-uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+uvicorn main:app
 ```
 
 ```
